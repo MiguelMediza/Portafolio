@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.nav_main{
+    background: linear-gradient(45deg, rgb(0, 217, 255), blue);
+    position: relative;
+    animation: cambiar 10s ease infinite;
+    -webkit-animation: cambiar 10s ease infinite;
+    background-size: 200% 200%;
+  
+}
+ 
+.main{
+  background-color: #353433;
+  font-family: "Raleway", sans-serif;
+}
+#parallax {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_960_720.jpg');
+    background-color: black;
+    background-attachment: fixed;
+    background-position-y: -0.2;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+.contenedor{
+  height: 550px;
+  width: 100%;
+}
+
+.logo{
+  letter-spacing: 15px;
+  font-size: 1.2em;
+}
+.container{  
+  width: 85%;
+  margin: auto;
+  
+}
+.header{
+  display: block;
+  background: #353433;
+  color: white; 
+  padding: 2rem 0;
+  /* position: fixed; */ /* Si queremos el menu fijo en la parte superior */
+  left: 0;
+  top: 0;
+  width: 100%;
+
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+}
+
+.logo-nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.navigation ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation ul li{ 
+  display: inline-block;
+}
+
+.navigation ul li a{
+  display: block;
+  padding: 0.5rem 2rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+
+.navigation ul li a:hover{
+  background: rgb(1, 91, 175);
+}
+
+.menu-icon{
+  display: none;
+}
+.nombre{
+  font-weight: bolder;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+.texto{
+  font-size: 25px;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  letter-spacing: 6px;
+}
+section.about{
+  height: 100vh;
+}
+
+.titulo{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin: 100px auto 100px;
+  text-shadow: rgb(74, 114, 226) 1px 0px 5px;
+  /* background-color: rgb(0, 67, 122); */
+  width: 400px;
+  padding: 5px 0 5px;
+  border-radius: 10px 0px 10px;
+  -webkit-border-radius: 10px 0px 10px;
+  -moz-border-radius: 10px 0px 10px;
+  -ms-border-radius: 10px 0px 10px;
+  -o-border-radius: 10px 0px 10px;
+}
+p{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+.arrow{
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  margin-top: 25vh;
+  color: rgb(20, 122, 218);
+}
+.arrowfinal{
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  margin-top: 15vh;
+  color: rgb(20, 122, 218);
+}
+
+
+
+
+/* .footer{
+  height: 100px;
+  display: flex;
+  color: aliceblue;
+  font-size: 30px;
+  font-family: 'Rancho', cursive;
+  border-top:  rgb(0, 0, 0) solid 1.5px ;
+  border-bottom:  rgb(0, 0, 0) solid 1.5px ;
+  background-image: linear-gradient(20deg, #353433, rgb(5, 21, 75));
+}
+.fa{
+  margin-right: 10px;
+  font-size: 40px;
+}
+.redes{
+  font-size: 20px;
+}
+footer div.column1{
+  width: 33%;
+  height: 90%;
+  top: 10px;
+  text-align: center;
+  margin: auto;
+  border-right: rgb(0, 0, 0) solid 1px;
+}
+footer div.column2{
+  width: 33%;
+  height: 90%;
+  text-align: center;
+  margin: auto;
+  border-right: rgb(0, 0, 0) solid 1px;
+}
+ footer div.column3{
+  width: 33%;
+  text-align: center;
+  height: 90%;
+  margin: auto;
+} */
+/* Responsive */
+@media only screen and (max-width: 750px) {
+  
+  .menu-icon{
+      display: block;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+  }
+  
+  .navigation{
+      width: 100%;
+      margin-top: 1rem;
+  }
+  
+  .navigation ul{
+      width: 85%;
+      display: none;
+  }
+  
+  .navigation ul.show{
+      display: block;
+  }
+  
+
+.navigation ul li{
+  display: block;
+}
+
+.navigation ul li a{
+  text-align: center;
+  width: 150px;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  margin-left: 42.5%;
+  margin-bottom: 10px;
+}
+
+.navigation ul li a:hover{
+  background: rgb(1, 91, 175);
+}
+#parallax{
+  background-position-x: -150px;
+}
+ 
+}
+
+@media only screen and (max-width: 600px) {
+  #parallax{
+    background-position-x: -300px;
+}
+}
+@media only screen and (max-width: 450px) {
+  #parallax{
+    background-position-x: -400px;
+}
+
+}
