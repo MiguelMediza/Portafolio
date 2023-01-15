@@ -1,24 +1,18 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Rock+Salt&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Code:wght@300&family=Rock+Salt&family=Satisfy&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
+    font-family: 'Fira Code', monospace;
 
-.nav_main{
-    background: linear-gradient(45deg, rgb(0, 217, 255), blue);
-    position: relative;
-    animation: cambiar 10s ease infinite;
-    -webkit-animation: cambiar 10s ease infinite;
-    background-size: 200% 200%;
-  
 }
  
 .main{
-  background-color: #353433;
-  font-family: "Raleway", sans-serif;
+  background-color: #00656e;
 }
 #parallax {
     background-image: url('https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_960_720.jpg');
@@ -39,7 +33,9 @@
 
 .logo{
   letter-spacing: 15px;
-  font-size: 1.2em;
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+  text-decoration: underline;
 }
 .container{  
   width: 85%;
@@ -48,7 +44,7 @@
 }
 .header{
   display: block;
-  background: #353433;
+  background: #00cfcc;
   color: white; 
   padding: 2rem 0;
   /* position: fixed; */ /* Si queremos el menu fijo en la parte superior */
@@ -90,7 +86,7 @@
 }
 
 .navigation ul li a:hover{
-  background: rgb(1, 91, 175);
+  background: #00656e;
 }
 
 .menu-icon{
@@ -107,10 +103,18 @@
   top: 50%;
   text-align: center;
   letter-spacing: 6px;
+  color: antiquewhite;
 }
 section.about{
   height: 100vh;
 }
+section.proyectos{
+  height: 100vh;
+}
+section.skills{
+  height: 100vh;
+}
+
 
 .titulo{
   color: white;
@@ -118,7 +122,7 @@ section.about{
   text-align: center;
   font-weight: bolder;
   letter-spacing: 2px;
-  margin: 100px auto 100px;
+  margin: 50px auto 100px;
   text-shadow: rgb(74, 114, 226) 1px 0px 5px;
   /* background-color: rgb(0, 67, 122); */
   width: 400px;
@@ -139,7 +143,7 @@ p{
   width: 70px;
   height: 70px;
   margin: auto;
-  margin-top: 25vh;
+  margin-top: 50px;
   color: rgb(20, 122, 218);
 }
 .arrowfinal{
@@ -152,17 +156,45 @@ p{
 }
 
 
+/* Estilos de seccion "Skills" */
 
+.skills_container{ 
+  width: 80%;
+  margin: auto;
+}
+.imagenes{
+  margin: auto;
+}
+.skills_container .imagenes{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+column-gap: 20px;
+row-gap: 50px;
+}
 
-/* .footer{
+.imagen{
+  width: 150px;
+
+}
+
+/* Estilos de animacion scroll */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.footer{
   height: 100px;
   display: flex;
   color: aliceblue;
   font-size: 30px;
-  font-family: 'Rancho', cursive;
-  border-top:  rgb(0, 0, 0) solid 1.5px ;
-  border-bottom:  rgb(0, 0, 0) solid 1.5px ;
-  background-image: linear-gradient(20deg, #353433, rgb(5, 21, 75));
+  background-color: #00424b;
 }
 .fa{
   margin-right: 10px;
@@ -172,26 +204,20 @@ p{
   font-size: 20px;
 }
 footer div.column1{
-  width: 33%;
+  width: 49%;
   height: 90%;
   top: 10px;
   text-align: center;
   margin: auto;
-  border-right: rgb(0, 0, 0) solid 1px;
+
 }
 footer div.column2{
-  width: 33%;
+  width: 49%;
   height: 90%;
   text-align: center;
   margin: auto;
-  border-right: rgb(0, 0, 0) solid 1px;
 }
- footer div.column3{
-  width: 33%;
-  text-align: center;
-  height: 90%;
-  margin: auto;
-} */
+
 /* Responsive */
 @media only screen and (max-width: 750px) {
   
@@ -232,7 +258,7 @@ footer div.column2{
 }
 
 .navigation ul li a:hover{
-  background: rgb(1, 91, 175);
+  background: #00656e;
 }
 #parallax{
   background-position-x: -150px;
@@ -244,10 +270,19 @@ footer div.column2{
   #parallax{
     background-position-x: -300px;
 }
+.skills_container .imagenes{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 50px;
+}
 }
 @media only screen and (max-width: 450px) {
   #parallax{
     background-position-x: -400px;
 }
+
+}
+@media screen and (max-width: 500px) {
 
 }

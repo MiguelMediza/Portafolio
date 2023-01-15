@@ -11,7 +11,7 @@
     //define parallax function
     function parallax(){
       var scrolled = $(window).scrollTop();
-      $('#parallax').css('background-positionY',(scrolled * -0.5)+'px');
+      $('#parallax').css('background-positionY',(scrolled * -0.2)+'px');
     };
     
   }); 
