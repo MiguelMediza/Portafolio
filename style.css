@@ -108,9 +108,7 @@
 section.about{
   height: 100vh;
 }
-section.proyectos{
-  height: 100vh;
-}
+
 section.skills{
   height: 100vh;
 }
@@ -156,19 +154,125 @@ p{
 }
 
 /* Estilos de section proyectos */
+.titulo_proyecto{
+  text-decoration: none;
+  text-align: center;
+  color: #00cfcc;
+}
 .proyecto1{
   height: 100vh;
   display: flex;
   justify-content: center;
 }
 .img_proyecto{
-  position: absolute;
   width: 500px;
   border: solid 10px whitesmoke;
 }
-.tarjeta{
+a.view{
+  text-decoration: none;
+  background-color: #00cfcc;
+  color: antiquewhite;
+  padding: 5px;
+}
+.icons{
+  width: 40px;
+  height: 40px;
+  background-color: #00cfcc;
+  bottom: -35px;
   position: relative;
-  
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.git{
+  display: flex;
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  align-content: center;
+}
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(214, 214, 214, 0.3);
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.etiquetas{
+  display: flex;
+  bottom: -110px;
+  position: relative;
+  justify-content: center;
+}
+.etiqueta{
+  background-color: #00cfcc;
+  padding: 5px;
+  margin: 2px;
+  color: white;
 }
 /* Estilos de seccion "Skills" */
 
@@ -203,6 +307,7 @@ row-gap: 50px;
   transform: translateY(0);
   opacity: 1;
 }
+/* Estilos del footer */
 .footer{
   height: 100px;
   display: flex;
@@ -215,21 +320,34 @@ row-gap: 50px;
   font-size: 40px;
 }
 .redes{
-  font-size: 20px;
+  font-size: 18px;
 }
 footer div.column1{
   width: 49%;
   height: 90%;
   top: 10px;
-  text-align: center;
   margin: auto;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 footer div.column2{
   width: 49%;
+  display: flex;
   height: 90%;
-  text-align: center;
   margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.icons_footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+footer a{
+  margin-left: 10px;
 }
 
 /* Responsive */
