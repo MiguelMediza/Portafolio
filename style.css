@@ -155,7 +155,21 @@ p{
   color: rgb(20, 122, 218);
 }
 
-
+/* Estilos de section proyectos */
+.proyecto1{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.img_proyecto{
+  position: absolute;
+  width: 500px;
+  border: solid 10px whitesmoke;
+}
+.tarjeta{
+  position: relative;
+  
+}
 /* Estilos de seccion "Skills" */
 
 .skills_container{ 
