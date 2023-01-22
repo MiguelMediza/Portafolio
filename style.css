@@ -160,7 +160,7 @@ p{
   color: #00cfcc;
 }
 .proyecto1{
-  height: 100vh;
+  margin-bottom: 100px;
   display: flex;
   justify-content: center;
 }
@@ -171,14 +171,13 @@ p{
 a.view{
   text-decoration: none;
   background-color: #00cfcc;
-  color: antiquewhite;
+  color: whitesmoke;
   padding: 5px;
 }
 .icons{
   width: 40px;
   height: 40px;
   background-color: #00cfcc;
-  bottom: -35px;
   position: relative;
   display: flex;
   margin: auto;
@@ -201,12 +200,12 @@ a.view{
 }
 
 .content .content-overlay {
-  background: rgba(214, 214, 214, 0.3);
+  background: rgba(48, 48, 48, 0.64);
   position: absolute;
-  height: 90%;
+  height: 88.3%;
   width: 100%;
   left: 0;
-  bottom: 0;
+  bottom: 5px;
   right: 0;
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -264,7 +263,7 @@ a.view{
 
 .etiquetas{
   display: flex;
-  bottom: -110px;
+  bottom: -85px;
   position: relative;
   justify-content: center;
 }
