@@ -1,7 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Rock+Salt&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Code:wght@300&family=Rock+Salt&family=Satisfy&display=swap');
-
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
 *{
     padding: 0;
     margin: 0;
@@ -24,6 +27,19 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+  }
+
+ .cv{
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    width: 150px;
+    background: #00656e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
   }
 
 .contenedor{
@@ -473,7 +489,7 @@ row-gap: 50px;
 @media only screen and (min-width: 1024px) {
   .skills_container .imagenes{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     row-gap: 50px;
 }
@@ -561,5 +577,10 @@ section.skills{
   #parallax{
     background-position-x: -300px;
 }
+
+}
+
+@media only screen and (max-width: 400px) {
+
 
 }
