@@ -139,7 +139,6 @@ section.skills{
   margin: 100px auto 100px;
   text-shadow: rgb(74, 114, 226) 1px 0px 5px;
   /* background-color: rgb(0, 67, 122); */
-  width: 400px;
   padding: 5px 0 5px;
   border-radius: 10px 0px 10px;
   -webkit-border-radius: 10px 0px 10px;
@@ -280,6 +279,7 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 column-gap: 20px;
 row-gap: 50px;
+justify-content: center;
 }
 
 .imagen{
@@ -469,6 +469,7 @@ row-gap: 50px;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     row-gap: 50px;
+    justify-content: center;
 }
 }
 @media only screen and (max-width: 990px) {
@@ -542,12 +543,13 @@ background: #00656e;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
   row-gap: 50px;
+  justify-content: center;
 }
 section.proyectos{
   margin-top: 300px;
 }
 section.skills{
-  margin-top: 200px;
+  margin-top: 300px;
 }
 }
 @media only screen and (max-width: 450px) {
