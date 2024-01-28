@@ -208,11 +208,17 @@
                     </div>
                 </div>
             <div class="copyright">
-                <p>Copyright 2023 <i class="fa-regular fa-copyright"></i> Diseñado por Miguel Mediza.</p>
+                <p>Copyright <span id="fecha"></span> <i class="fa-regular fa-copyright"></i> Diseñado por Miguel Mediza.</p>
             </div>
             </footer>
     
         </main>
+
+        <script>
+            fecha = new Date();
+            year = fecha.getFullYear();
+            document.getElementById("fecha").innerHTML = year;
+        </script>
 
         <script>
             var form = document.getElementById("form");
